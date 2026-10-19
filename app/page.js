@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <main>
-      <h1>My Tasks</h1>
+      <h1>My Tasks ({tasks.length})</h1>
       <input value={text} onChange={(e) => setText(e.target.value)}/>
       <button onClick={addTask}>Add</button>
       {tasks.length === 0 && <p>No tasks yet!</p>}
